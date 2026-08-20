@@ -1,5 +1,5 @@
 /**
- * NexEdge — events.js
+ * NextEdge — events.js
  * Tab switcher for Upcoming / Past events
  */
 (function () {

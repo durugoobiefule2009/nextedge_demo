@@ -1,5 +1,5 @@
 /**
- * NexEdge — programs.js
+ * NextEdge — programs.js
  * Gallery filter logic
  */
 (function () {

@@ -1,4 +1,4 @@
-# NexEdge Research Scheme
+# NextEdge Research Scheme
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
@@ -27,9 +27,9 @@
 
 ## 💡 About The Project
 
-**NexEdge Research Scheme** is a modern, responsive web application dedicated to supporting student researchers and early-career food scientists. The platform serves as an operational hub connecting emerging scholars with world-class mentorship, research funding, hands-on laboratory training, and community-driven projects.
+**NextEdge Research Scheme** is a modern, responsive web application dedicated to supporting student researchers and early-career food scientists. The platform serves as an operational hub connecting emerging scholars with world-class mentorship, research funding, hands-on laboratory training, and community-driven projects.
 
-Designed with a clean, accessible aesthetic and built entirely using pure vanilla web technologies, NexEdge offers a seamless browsing experience across all devices.
+Designed with a clean, accessible aesthetic and built entirely using pure vanilla web technologies, NextEdge offers a seamless browsing experience across all devices.
 
 ---
 
@@ -75,7 +75,7 @@ nextedge_demo/
 1. **Home (`index.html`)**: Features the hero banner, interactive photo band carousel, core program cards, live impact counters, upcoming event spotlight, and newsletter subscription form.
 2. **Programs (`programs.html`)**: Details available opportunities including Research Grants, 1-on-1 Mentorship, Lab Training, and Community Projects with application guidelines.
 3. **Events (`events.html`)**: Displays upcoming workshops, webinars, and past event archives with filtering options and event registration triggers.
-4. **About Us (`about.html`)**: Explores the story behind NexEdge, core values, organizational pillars, and leadership team.
+4. **About Us (`about.html`)**: Explores the story behind NextEdge, core values, organizational pillars, and leadership team.
 5. **Contact (`contact.html`)**: Direct channel for inquiries, location maps, frequently asked questions, and donation options.
 
 ---

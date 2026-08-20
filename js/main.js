@@ -1,5 +1,5 @@
 /**
- * NexEdge Research Scheme — main.js
+ * NextEdge Research Scheme — main.js
  * Shared JS: Mobile menu, Scroll shadow, Active nav
  */
 
