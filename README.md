@@ -1,100 +1,54 @@
-# NextEdge Research Scheme
+# NexEdge Research Scheme
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![Responsive Design](https://img.shields.io/badge/Design-Responsive-brightgreen)](#)
-
-> **Empowering early researchers and food scientists across Africa to solve real-world challenges through research grants, mentorship, training, and community outreach.**
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 ---
 
-## 📋 Table of Contents
+## Overview
 
-- [About The Project](#-about-the-project)
-- [Key Features](#-key-features)
-- [Project Architecture & File Structure](#-project-architecture--file-structure)
-- [Pages Overview](#-pages-overview)
-- [Tech Stack](#-tech-stack)
-- [Getting Started](#-getting-started)
-- [Interactive Features & JavaScript](#-interactive-features--javascript)
-- [Styling & Design System](#-styling--design-system)
-- [Contributing](#-contributing)
-- [License](#-license)
+**NexEdge Research Scheme** is a modern, responsive web platform built to equip emerging Nigerian scholars alongside leading global experts through university masterclasses, competitive research showcases, seed grants, 1-on-1 mentorship, and publishable scientific outputs.
+
+Designed with a clean, accessible aesthetic and built entirely using pure vanilla web technologies, NexEdge offers a seamless browsing experience across all devices.
 
 ---
 
-## 💡 About The Project
+## Key Features
 
-**NextEdge Research Scheme** is a modern, responsive web application dedicated to supporting student researchers and early-career food scientists. The platform serves as an operational hub connecting emerging scholars with world-class mentorship, research funding, hands-on laboratory training, and community-driven projects.
-
-Designed with a clean, accessible aesthetic and built entirely using pure vanilla web technologies, NextEdge offers a seamless browsing experience across all devices.
-
----
-
-## ✨ Key Features
-
-- **🎨 Modern & Engaging UI**: Custom color palettes, subtle micro-animations, sleek cards, and glassmorphism elements.
-- **📱 Fully Responsive**: Optimized layouts for desktops, tablets, and mobile devices with a slide-out navigation menu.
-- **🎠 Interactive Photo Band Carousel**: Auto-sliding stepped carousel featuring key program moments, pausing automatically on user hover/touch.
-- **📊 Animated Impact Counters**: Smooth number counter animations triggered upon scrolling into view using the `IntersectionObserver` API.
-- **📅 Events & Program Listings**: Structured displays for workshops, webinars, research grants, and mentorship opportunities.
-- **✉️ Interactive Contact & Donation Portals**: Form validation feedback and user interactions built into contact and newsletter subscription sections.
-- **⚡ Zero External Dependencies**: Built using vanilla HTML5, CSS3, and JavaScript without heavyweight framework dependencies for maximum performance and speed.
+- **Responsive Header Navigation**: Sticky navigation bar with active page indicator, mobile hamburger menu overlay, and direct CTA.
+- **Hero & Stepped Photo Band**: High-impact branding banner accompanied by an interactive photo carousel band showcasing scholar activities.
+- **3-Pillar Capability Banner**: Highlights Institutional Reach, Grants & Showcases, and Global Expertise.
+- **6-Card Impact Metrics Grid**: Interactive counter animations celebrating scholar achievements and project milestones.
+- **Open-Access Toolkit Library (`toolkit.html`)**: Centralized hub offering free, downloadable proposal blueprints, masterclass slide decks, Zoom recordings, cohort evaluation reports, workshop guides, and data analysis cheatsheets.
+- **Network & Engagement Gateway (`network.html`)**: 6 pathways connecting Student Members, Global Mentors, University Departments, Ambassadors, Volunteers, and Sponsors with interactive modal forms.
+- **Verification Portfolio & Research Directorate (`about.html`)**: Features survey analytics, press coverage quotes, and team governance structure.
+- **Departmental Inquiry Portal (`contact.html`)**: Interactive inquiry forms and direct email routing for grant, media, and departmental inquiries.
 
 ---
 
-## 📁 Project Architecture & File Structure
+## Site Architecture (6 Core Pages)
 
-```
-nextedge_demo/
-├── index.html            # Main Landing Page
-├── programs.html         # Programs & Offerings Page
-├── events.html           # Events & Workshops Page
-├── about.html            # About Us, Mission & Leadership Page
-├── contact.html          # Contact & Donation Page
-├── css/
-│   ├── style.css         # Global styles, variables, typography, navigation & footer
-│   ├── home.css          # Homepage-specific styling & hero design
-│   ├── programs.css      # Program page layout & card styles
-│   ├── events.css        # Events section layout & filter styling
-│   ├── about.css         # Mission, vision & team layout styles
-│   └── contact.css       # Form, modal, and contact card styles
-├── js/
-│   ├── main.js           # Shared interactive scripts (Navbar, Mobile Menu, Counters, Carousel)
-│   ├── programs.js       # Program filtering & interactive tab handling
-│   └── events.js         # Event filtering & registration modal handling
-└── images/               # Scalable SVG graphics & optimized visual assets
-```
+1. **Home (`index.html`)**: Platform overview, press strip, 3-pillar banner, 6-card metrics, core offerings summary, toolkit preview, and survey feedback highlights.
+2. **Programmes (`programs.html`)**: Detailed walkthrough of 6 programme pillars with dedicated CTAs and interactive media gallery.
+3. **Open Resources (`toolkit.html`)**: Resource library with downloadable PDF/MP4 assets across 6 categories.
+4. **Network (`network.html`)**: Gateway cards and interactive onboarding modals for all 6 community entry points.
+5. **About Us (`about.html`)**: Mission, vision, survey data verification portfolio, press quotes, and Research Directorate team leadership.
+6. **Contact (`contact.html`)**: Departmental inquiry portal, support form, and direct email channels.
 
 ---
 
-## 🌐 Pages Overview
+## Technology Stack
 
-1. **Home (`index.html`)**: Features the hero banner, interactive photo band carousel, core program cards, live impact counters, upcoming event spotlight, and newsletter subscription form.
-2. **Programs (`programs.html`)**: Details available opportunities including Research Grants, 1-on-1 Mentorship, Lab Training, and Community Projects with application guidelines.
-3. **Events (`events.html`)**: Displays upcoming workshops, webinars, and past event archives with filtering options and event registration triggers.
-4. **About Us (`about.html`)**: Explores the story behind NextEdge, core values, organizational pillars, and leadership team.
-5. **Contact (`contact.html`)**: Direct channel for inquiries, location maps, frequently asked questions, and donation options.
+- **HTML5**: Semantic elements, ARIA accessibility attributes, structured data markup.
+- **CSS3**: Custom Property tokens (`:root`), Flexbox, Grid layout, smooth transitions.
+- **JavaScript (ES6+)**: Vanilla JS for mobile menu, smooth scrolling, modal dialog popups, and numerical count animations.
 
 ---
 
-## 🛠️ Tech Stack
-
-- **HTML5**: Semantic elements, accessible ARIA attributes, and open-graph meta tags.
-- **CSS3**: Vanilla CSS utilizing CSS custom properties (variables), Flexbox, CSS Grid, media queries, and smooth transitions.
-- **JavaScript (ES6+)**: Modular standard JS for DOM manipulation, event handling, and `IntersectionObserver` API integration.
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-No complex build tools, package managers, or compilers are required to run this project. You only need a standard web browser.
-
-### Local Installation & Running
+## Local Development & Setup
 
 1. **Clone the Repository**:
    ```bash
@@ -102,60 +56,11 @@ No complex build tools, package managers, or compilers are required to run this 
    cd nextedge_demo
    ```
 
-2. **Open in Browser**:
-   - Double-click `index.html` to open it directly in your web browser.
-   - *Or* run a simple local web server:
-
-   **Python 3**:
-   ```bash
-   python -m http.server 8000
-   ```
-   Then open `http://localhost:8000` in your browser.
-
-   **Node.js (`npx serve`)**:
-   ```bash
-   npx serve .
-   ```
+2. **Run Locally**:
+   Open `index.html` in any web browser or use a local HTTP dev server (e.g. `npx serve .` or VS Code Live Server).
 
 ---
 
-## ⚡ Interactive Features & JavaScript
+## License
 
-- **Navbar Scroll Effect**: Automatically toggles shadow styling on scroll.
-- **Mobile Menu Toggle**: Responsive slide-out menu with smooth hamburger icon animations.
-- **Number Counter Animation**: Custom ease-out quad animation algorithm triggered when counter elements enter the viewport.
-- **Stepped Photo Carousel**: Center-aligned automatic sliding carousel with recalculation on viewport resize and pause-on-hover logic.
-
----
-
-## 🎨 Styling & Design System
-
-The global stylesheet (`css/style.css`) defines primary design tokens:
-
-```css
-:root {
-  --primary-color: #0F172A;
-  --accent-color: #EA580C;
-  --text-main: #334155;
-  --bg-light: #F8FAFC;
-  /* CSS Variables for colors, spacing, and transitions */
-}
-```
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! If you'd like to improve the site or add new features:
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git checkout -b feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
-## 📄 License
-
-Distributed under the MIT License. See `LICENSE` for more information.
+This project is licensed under the [MIT License](LICENSE).

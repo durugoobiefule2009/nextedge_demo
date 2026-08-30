@@ -1,5 +1,5 @@
 /* ============================================================
-   NextEdge Research Scheme — Global Styles
+   NexEdge Research Scheme — Global Styles
    style.css: Variables, Reset, Typography, Navbar, Footer
    ============================================================ */
 
@@ -89,6 +89,20 @@ body {
   color: var(--text-dark);
   background: var(--bg-white);
   -webkit-font-smoothing: antialiased;
+}
+
+/* ===== SCROLL REVEAL ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.16,0.84,0.44,1);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
 }
 
 img { display: block; max-width: 100%; height: auto; }
@@ -563,6 +577,109 @@ h1, h2, h3, h4, h5, h6 {
 
 .figure-overlay { display: none !important; }
 
+/* ===== MODAL SYSTEM ===== */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(11, 34, 56, 0.7);
+  backdrop-filter: blur(4px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--trans-mid), visibility var(--trans-mid);
+}
+.modal-backdrop.active {
+  opacity: 1;
+  visibility: visible;
+}
+.modal-box {
+  background: var(--bg-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  max-width: 580px;
+  width: 100%;
+  padding: 2.2rem;
+  position: relative;
+  transform: translateY(20px) scale(0.96);
+  transition: transform var(--trans-mid);
+  max-height: 90vh;
+  overflow-y: auto;
+}
+.modal-backdrop.active .modal-box {
+  transform: translateY(0) scale(1);
+}
+.modal-close {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--bg-porcelain);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: var(--text-mid);
+  transition: background var(--trans-fast), color var(--trans-fast);
+}
+.modal-close:hover {
+  background: var(--orange-bg);
+  color: var(--orange);
+}
+.modal-header h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 0.3rem;
+}
+.modal-header p {
+  font-size: 0.88rem;
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+}
+
+/* ===== PRESS STRIP ===== */
+.press-strip {
+  background: var(--bg-porcelain);
+  border-y: 1px solid var(--border);
+  padding: 1.8rem 0;
+}
+.press-strip-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.press-strip-label {
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-light);
+}
+.press-logos {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+.press-logo-item {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--text-muted);
+  letter-spacing: -0.01em;
+  transition: color var(--trans-fast);
+}
+.press-logo-item:hover { color: var(--navy); }
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1023px) {
   .nav-links { display: none; }
@@ -576,9 +693,11 @@ h1, h2, h3, h4, h5, h6 {
     gap: 2rem;
   }
   .footer-brand { grid-column: 1 / -1; }
+  .press-strip-inner { flex-direction: column; align-items: flex-start; gap: 1rem; }
 }
 
 @media (max-width: 479px) {
   .footer-grid { grid-template-columns: 1fr; }
   .footer-bottom-inner { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
 }
+
